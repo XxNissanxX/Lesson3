@@ -1,129 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Book Club
-    
-    </title>
+    <meta charset="utf-8">
+    <title>Mount Caramel Book Club</title>
+    <link rel='stylesheet' href='style.css' type="text/css">
     <style>
-        nav{
-            background-color: aquamarine;
-        }
-        #intro{
-            background-color: lightpink;
-        }
-        body{
+        body {
+            /* first lesson*/
             background-color: #eeeeee;
         }
-        h2,p{
+
+        header {
+            /* first lesson*/
+            background-color: brown;
+        }
+
+        nav {
+            /* first lesson*/
+            background-color: aquamarine;
+        }
+
+        #intro {
+            /* first lesson*/
+            background-color: lightpink;
+            /* Second Lesson */
+             font-family: Arial, Helvetica, sans-serif ;
+        }
+
+        .main-section-content h2 {
+            /* first lesson*/
+            background-color: darkkhaki;
+              /* Second Lesson */
+             font-family: Arial, Helvetica, sans-serif ;
+        }
+
+        #bestsellers,
+        footer {
+            /* first lesson*/
+            background-color: lightyellow;
+        }
+
+        header,
+        nav,
+        #intro,
+        #main-section,
+        #bestsellers,
+        footer {
+            /* first lesson*/
+            border: 1px solid black;
+        }
+
+        header,
+        nav,
+        #main-section {
+            /* first lesson*/
+            border-radius: 10px;
+        }
+
+        header h1 {
+            /* first lesson*/
+            color: white;
+              /* Second Lesson */
+             font-family: Arial, Helvetica, sans-serif ;
+             font-size: 50px;
+        }
+
+        h2,
+        p {
+            /* first lesson*/
             color: #333333;
         }
-        tr:last-child{color: red;}
-        footer{background-color: lightyellow;}
 
-        
+        table,
+        th,
+        td {
+            /* first lesson*/
+            border: 1px solid black;
+        }
+
+        tr:last-child {
+            /* first lesson*/
+            color: red;
+        }
+
+        span {
+            /* first lesson*/
+            color: blue;
+        }
+
+        footer p:first-child span {
+            /* first lesson*/
+            color: red;
+        }
+
+        .teacher-info {
+            /* first lesson*/
+            border: 1px solid;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        button {
+            /*first lesson*/
+            background-color: red;
+            color: white;
+            /* Second Lesson */
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* Second Lesson */
+    ul{
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        color: #333333;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    li a:hover{
+        color: red;
+
+    }
+    p{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline;
+    }
     
     </style>
 </head>
+
 <body>
-    <div id="grid-container" >
-        <header>
-    <h1>Aatish Book Club</h1>
-    <img src="Books.jpeg" alt="Book Image">
-</header>
-<nav>
-    <ul>
-<li><a href="index.html">home</a></li>
-<li><a href="https://openlibrary.org/">online rescources</a></li>
-<li><a href="#">reading groups</a></li>
-<li><a href="#">contact us</a></li>
-</nav>
-<div id="intro" >
-
-    </ul>
-    <h2>Welcome To My Book Club</h2>
-    <P>The Aatish Book Club Is An Online Community Of Book Readers In School Of The Ryan School</P>
+    <div class="grid-container">
+        <!--Heading-->
+        <header style='background-color: cadetblue;'>
+            <h1>
+                Aatish Book Club
+            </h1>
+            <img src="Books.jpeg" alt="Book Image">
+        </header>
+        <!--navbar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="https://openlibrary.org/">online rescources</a></li>
+                <li><a href="#">reading groups</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+        <!--Intro-->
+        <div id="intro">
+            <h2>Welcome To My Book Club</h2>
+            <P>The Aatish Book Club Is An Online Community Of Book Readers In School Of The Ryan School</P>
+        </div>
+        <!--Main Section-->
+        <div id="main-section">
+            <!--content-1-->
+            <div class="main-section-content">
+                <h2>Meet our teachers</h2>
+                <div id="teachers">
+                    <div class="teacher-info">
+                        <div>
+                            <img src="Teacher 1.jpeg" alt="Teacher Image">
+                        </div>
+                        <div>
+                            <h3>Miss Afshana </h3>
+                            <p>She Teaches Science In Elementry School</p>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <div>
+                            <img src="Teacher 2.jpeg" alt="Teacher Image">
+                        </div>
+                        <div>
+                            <h3>Miss Jasmeet</h3>
+                            <p>She Teaches Maths In The High School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content-2-->
+            <div id="book-reviews" class="main-section-content">
+                <h2>Book Review</h2>
+                <h3>Tom Gates</h3>
+                <p><strong>Mr Bharath</strong><q>I love this book because it is very good if you are bored </q></p>
+                <p><strong>Mr Aarush</strong><q>this is such an awesome book if you love reading</q></p>
+            </div>
+            <!--content-3-->
+            <div id="videos" class="main-section-content">
+                <h2>Related Videos</h2>
+                <div>
+                    <video height="200" width="350" controls autoplay>
+                        <source src="Books Video.mp4" type="video/mp4">
+                    </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FVqDj0-M94s?si=UUDd4Z1l_oRsH8vg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!--content-4(tables)-->
+            <div class="main-section-content">
+                <h2>Opening Timings</h2>
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Bestseller Section-->
+        <div id="bestsellers">
+            <h2>Best Sellers</h2>
+            <b>Woman In The Window</b>By<em>AJFinn</em><br>
+            <b>Stand By Me</b>By<em>SD Robertson</em><br>
+            <b>One In A Million</b>By<em>Lindsey Kelk</em><br>
+        </div>
+        <footer>
+            <p>Contact Us:Ms Caroline</p>
+            <p>Phone Number:239028496</p>
+            <address>At 20th Street bulding</address>
+        </footer>
+        <!--fifth lesson-->
+        <button>Enquiry</button>
     </div>
-    <div id="main-section" >
-        <div id="main-section-content" >
-    <h2>Meet Our Teachers</h2>
-<div id="Teachers" >
-    <div id="Teacher-info" >
-        <div>
-    <h3>Miss Afshana </h3>
-    <p>She Teaches Science In Elementry School</p>
-    <img src="Teacher 1.jpeg" alt="Teacher Image">
-    <h3>Miss Jasmeet</h3>
-    <p>She Teaches Maths In The High School</p>
-    <img src="Teacher 2.jpeg" alt="Teacher Image">
-    <h2>Book Review</h2>
-    <h3>Tom Gates</h3>
-   <p><strong>Mr Bharath</strong><q>I love this book because it is very good if you are bored </q></p>
-   <p><strong>Mr Aarush</strong><q>this is such an awesome book if you love reading</q></p>
-   <h2>Related Videos</h2>
-   <video height="200" width="350" controls autoplay>
-    <source src="Books Video.mp4" type="video/mp4">
-   </video>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FVqDj0-M94s?si=UUDd4Z1l_oRsH8vg"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <table>
-    <tr>
-        <th>Monday</th>
-        <td>11am-3pm</td>
-
-        
-    </tr>
-    <tr>
-        <th>Tueday</th>
-        <td>11am-3pm</td>
-    
-    
-    </tr>
-    <tr>
-        <th>Wednesday</th>
-        <td>11am-3pm</td>
-    
-    
-    </tr>
-    <tr>
-        <th>Thursday</th>
-        <td>11am-3pm</td>
-    
-    
-    </tr>
-    <tr>
-        <th>Friday</th>
-        <td>11am-1pm</td>
-    
-    
-    </tr>
-    <tr>
-        <th>Saturday</th>
-        <td>11am-1pm</td>
-    
-    
-    </tr>
-    <tr>
-        <th>Sunday</th>
-        <td>CLOSED</td>
-    
-    
-    </tr>
-   </table>
-<div id="Best Sellers" >
-   <h2>Best Sellers</h2>
-   <b>Woman In The Window</b>By<em>AJFinn</em><br>
-<b>Stand By Me</b>By<em>SD Robertson</em><br>
-<b>One In A Million</b>By<em>Lindsey Kelk</em><br>
-</div>
-<footer>
-<p>Contact Us:Ms Caroline</p>
-<p>Phone Number:239028496</p>
-<address>At 20th Street bulding</address>
-</footer>
-</div>
 </body>
+
 </html>
